@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Jeff Rio Mausisa Portfolio</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">JEFF RIO MAUSISA</h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h2 id="intro-title">Hi, I’m Jeff Rio Mausisa👋</h2>
+            <p class="lead">I build simple, human-friendly web experiences.</p>
+            <a class="btn" href="#projects">See my work</a>
+          </div>
+          <figure class="profile">
+            <div class="profile-image-container">
+              <img src="images/Jeff_Rio_Mausisa_2x2.png" alt="Portrait of Jeff Rio Mausisa" class="profile-img" id="profile-image" data-type="profile" />
+              <div class="upload-overlay">
+                <button class="upload-btn" id="upload-profile-btn" aria-label="Upload profile picture">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <figcaption>Based in Butuan City, PH</figcaption>
+            <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About</h2>
+        <div class="about-controls" aria-label="About editing controls">
+          <button id="about-edit" type="button" class="btn btn-outline" aria-pressed="false" aria-controls="about-content">Edit</button>
+        </div>
+        <div id="about-content">
+          <p id="about-p1">
+            I’m a beginner web developer focused on clean, accessible interfaces. I enjoy CSS layout, semantic HTML, and learning by building.
+          </p>
+          <p id="about-p2">
+            I’m currently exploring <strong>HTML/CSS</strong> fundamentals and crafting small projects.
+            You can reach me on <a href="#contact">email</a> or see my code on 
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <div class="cards">
+
+          <article class="card">
+            <div class="project-image-container">
+              <img src="images/screenshot-project-a.png" alt="Screenshot of Project A" class="project-img" data-type="project1" />
+              <div class="upload-overlay">
+                <button class="upload-btn project-upload-btn" data-project="1" aria-label="Upload project 1 image">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Project A</h3>
+              <p>A simple landing page using only HTML and CSS.</p>
+              <a class="btn btn-outline" href="http://localhost/BRGY_ATTENDANCE/" target="_blank" rel="noopener">View</a>
+            </div>
+            <input type="file" class="project-upload" data-project="1" accept="image/*" style="display: none;">
+          </article>
+
+          <article class="card">
+            <div class="project-image-container">
+              <img src="images/project-b.png" alt="Screenshot of Project B" class="project-img" data-type="project2" />
+              <div class="upload-overlay">
+                <button class="upload-btn project-upload-btn" data-project="2" aria-label="Upload project 2 image">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Project B</h3>
+              <p>A responsive portfolio layout with flexbox.</p>
+              <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+            <input type="file" class="project-upload" data-project="2" accept="image/*" style="display: none;">
+          </article>
+
+          <article class="card">
+            <div class="project-image-container">
+              <img src="images/project-c.png" alt="Screenshot of Project C" class="project-img" data-type="project3" />
+              <div class="upload-overlay">
+                <button class="upload-btn project-upload-btn" data-project="3" aria-label="Upload project 3 image">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Project C</h3>
+              <p>A clean contact page with form styles.</p>
+              <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View</a>
+            </div>
+            <input type="file" class="project-upload" data-project="3" accept="image/*" style="display: none;">
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <ul class="chips" role="list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Responsive Design</li>
+          <li>Git & GitHub</li>
+          <li>Accessibility</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <address>
+          Email: <a href="mausisajeffrio@example.com">mausisajeffrio@example.com</a><br />
+          Location: Butuan City, Philippines
+        </address>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    © <span id="year">2025</span> Jeff Rio Mausisa· Built with HTML & CSS
+  </footer>
+
+  <script src="/js/script.js" defer></script>
+</body>
+</html>
+</html>
